@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preparatoria Ejemplo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #800000;
+      padding: 15px;
+      color: white;
+      text-align: center;
+    }
+
+    .menu-toggle {
+      display: none;
+      background-color: #b22222;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    nav {
+      background-color: #b22222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #d32f2f;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    /* Carrusel */
+  
+    .carousel {
+      max-width: 100%;
+      position: relative;
+      margin: 0 auto 30px auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .carousel-buttons button {
+      padding: 8px 12px;
+      margin: 0 5px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #d32f2f;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        display: none;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Preparatoria </h1>
+    <p>Educación con excelencia</p>
+  </header>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+
+  <nav id="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#visiones">Vision</a>
+    <a href="#carrusel">Galería</a>
+    <a href="#convocatori">Convocatoria</a>
+    <a href="#inscripciones">Inscripcion</a>
+    <a href="#instalacion">Instalaciones</a>
+    <a href="#oferta">Oferta Académica</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubi">Ubicacion</a>
+  </nav>
+
+  <div class="content">
+    <h2 id="inicio">Bienvenidos</h2>
+    <p>Conoce tu mejor opcion
+      Preparatoria Oficial Num.202.  Explora nuestras secciones.</p>
+     <p>La educación no es la preparación para la vida; la educación es la vida en sí misma.
+     ~John Dewey~ </p>
+<img src=https://i.ibb.co/yBKsp1Gj/Screenshot-20250612-181220-Google-2.jpg idth="50" height="210">
+<img src=https://i.ibb.co/GfGrfFKy/IMG-20250610-WA0111.jpg idth="50" height="270">
+    
+
+    <!-- Vision -->
+    <h2 id="visiones">Vision</h2>
+    <ul>Pretendemos ser una preparatoria de alto rendimiento académico, catalizador de pensamientos críticos y creativos, formados con humanismo, inclusión y empatía, firmes de contribuir en la formación integral del bachiller dirigidos hacia el aprendizaje significativo, profundo, contextualizado y socioemocional, contribuyendo al desarrollo del alumno con sentido social colectivo y humanista.</ul>
+    <img src=https://i.ibb.co/zVmkH4Dk/IMG-20250612-WA0058-2.jpg idth="50" height="270">
+        
+    <!-- Convocatoria    -->
+    <h2 id="convocatori">Convocatoria</h2>
+  <p>Puedes consultar la convocatoria completa en el siguiente enlace:</p>
+  <p>
+    <a href="https://www.facebook.com/share/1JAfjiXVYQ/" target="_blank">
+      Ver Convocatoria en Facebook
+    </a>
+  </p>
+</div>
+    
+    <!-- Carrusel de Imágenes -->
+    <h2 id="carrusel">Galería de imágenes</h2>
+    <div class="carousel">
+      
+      <div class="slides" id="slides" idth=50 height=200 >
+        <div class="slide"><img src= https://i.ibb.co/GfGrfFKy/IMG-20250610-WA0111.jpg idth="5" alt="Eventos"></div>
+        <div class="slide"><img src=https://i.ibb.co/gMBwkqdf/IMG-20250612-WA0045.jpg alt="Instalaciones"></div>
+        <div class="slide"><img src="https://i.ibb.co/nG3BMCr/IMG-20250612-WA0057-2.jpg" alt="Feria Académica"></div>
+      </div>
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="showSlide(0)">1</button>
+      <button onclick="showSlide(1)">2</button>
+      <button onclick="showSlide(2)">3</button>
+    </div>
+    <!-- Inscripcion -->
+    <h2 id="inscripciones">Inscripcion</h2>
+    <ul>
+      <p> 1.La inscripción se llevará a cabo de acuerdo a las fechas indicades y establecides por cada institución en el formato de asignación.</p>
+      <p>1.1 Requisitos generales para la inscripcion:</pi>
+      <li>Contar con el formato de asignacion</li>
+      <li>Certificado de educacion secundaria (original y copia)</li>
+      <li>Acta de nacimiento (original y copia)</li>
+      <li>Clave unica de Registro de Poblacion (CURP)</li>
+      <li>Dos fotografias tamaño infantil,recientes e iguales</li>
+      <p>1.2 La verificacion de antecedentes escolares se realizara en el plantel educativo asignado</p>
+    </ul>
+    
+    <!-- Instalaciones -->
+    <h2 id="instalacion">Instalaciones</h2>
+    <ul>La EPO 202 ,cuenta con:</ul>
+    <li>6 aulas</li>
+    <li>Direccion</li>
+    <li>Orientacion</li>
+    <li>Laboratorio de las ciencias </li>
+    <li>Sala de computo</li>
+    <li>Sala de maestros</li>
+    <li>Cooperativa</li>
+    <li>Papeleria</li>
+    <li>Sala de mediacion</li>
+    <li>Baños</li>
+    <li>Canchas de basquetbol,volibol y futbol</li>
+    <img src=https://i.ibb.co/fzMXvtv4/IMG-20250610-WA0103.jpg      idth="50" height="270">
+    <!-- Oferta académica -->
+    <h2 id="oferta">Oferta Académica</h2>
+    <ul>
+      <p> Dependiente de la Secretaria de Educación del Estado de México, ofrece el servicio de Educación Media Superior en la modalidad de Bachillerato General, con una Formación Propedéutica basada en un modelo Educativo sustentado en el desarrollo de competencias.
+
+Las actividades que se realizan permiten al alumno acceder a estructuras intelectuales complejas y mejorar así sus procesos mentales alcanzados para entender su entorno bajo el proceso de aprendizaje significativo.
+
+Las Escuelas Preparatoria Oficiales cuentan con reconocimiento oficial avalado por el Gobierno del Estado de México.</p>
+      <!-- Materias -->
+<h2 id="materias">Materias</h2>
+<p>Estas son algunas de las materias que forman parte del plan de estudios:</p>
+<ul>
+  <li>Matemáticas</li>
+  <li>Física</li>
+  <li>Química</li>
+  <li>Biología</li>
+  <li>Lengua y Literatura</li>
+  <li>Historia de México</li>
+  <li>Geografía</li>
+  <li>Inglés</li>
+  <li>Informática</li>
+  <li>Educación Física</li>
+  <li>Orientación Educativa</li>
+  <li>Salud Integral del adolescente</li>
+  <li>Psicologia</li>
+  <li>Derecho</li>
+  <li>Economia</li>
+  <li>Ecologia</li>
+  <li>Paginas Web</li>
+  <li>Diseño Digital</li>
+    </ul>
+    <img src=https://i.ibb.co/zTP389P6/IMG-20250610-WA0104.jpg idth="50" height="270">
+
+    <!-- Contacto -->
+    <h2 id="contacto">Contacto</h2>
+    <p>Direccion: Camino Zacatenco,Col.Centro de Calpulalpan Jilotepec,Mexico,C.P.54265
+    </p>
+    <p>Teléfono: (55)48076034
+    </p>
+      <!-- Ubicacion -->
+     
+  <h2 id="ubi">Ubicacion</h2>
+    <iframe class="w-100" height="300" style="border:0;" loading="lazy" allowfullscreen
+      src="https://www.google.com/maps?q=Preparatoria+202+Calpulalpan&output=embed"></iframe>
+  </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+
+    // Carrusel
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.getElementById("slides");
+      const totalSlides = slides.children.length;
+      if (index >= 0 && index < totalSlides) {
+        currentIndex = index;
+        const offset = -index * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+      }
+    }
+
+    // Opcional: Cambio automático cada 5 segundos
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % 3;
+      showSlide(currentIndex);
+    }, 5000);
+  </script>
+
+</body>
+</html>
+
